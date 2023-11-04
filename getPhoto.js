@@ -1,3 +1,5 @@
+//pexel api
+
 async function getPhoto(e) {
     e.preventDefault()
     document.getElementById('photoSpot').innerHTML = ''

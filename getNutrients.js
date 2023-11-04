@@ -1,7 +1,6 @@
+//FoodData Central API Guide
 
-//
-
-async function getFruitTextData(e) {
+async function getNutrients(e) {
 
     const nutrientHeader = document.getElementById('nutrients')
     const ul = document.getElementById('nutrientSpot')
@@ -32,4 +31,4 @@ async function getFruitTextData(e) {
     })
 }
 
-export {getFruitTextData}
+export {getNutrients}

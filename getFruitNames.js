@@ -1,10 +1,10 @@
+//Fruityvice API
 
 
-
- async function getFruitData() {
+ async function getFruitNames() {
 
      //Fruit APIs
-     
+
      // const FRUIT_URL = "https://tropicalfruitandveg.com/api/tfvjsonapi.php?search=berry";
      const FRUIT_URL = "https://www.fruityvice.com/api/fruit/all"
      const FRUIT_URL2 = "https://tropicalfruitandveg.com/api/tfvxmlapi.php?search=all"
@@ -23,4 +23,4 @@
     });
 };
 
-export {getFruitData}
+export {getFruitNames}
