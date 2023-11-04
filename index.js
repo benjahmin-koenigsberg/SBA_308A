@@ -2,6 +2,9 @@ import { getFruitNames } from "./getFruitNames.js"
 import { getPhoto } from "./getPhoto.js"
 import { getNutrients } from "./getNutrients.js"
 
+
+
+
 //DOM elements
 const nutrientHeader = document.getElementById('nutrients')
 const fruitSelect = document.getElementById('fruitSelect')

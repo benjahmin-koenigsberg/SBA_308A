@@ -12,14 +12,13 @@
     const response = await axios.get(FRUIT_URL)
     const fruitData = await response.data
     console.log(fruitData);
-    fruitData.forEach(element => {
+
         //document.getElementById('app').innerHTML +=`<p>${element.name}</p>`
         fruitData.forEach((fruit) => {
             const fruitEl = document.createElement("option");
             fruitEl.setAttribute("value", fruit.name);
             fruitEl.innerText = fruit.name
             document.getElementById('fruitSelect').append(fruitEl);
-        });
     });
 };
 
