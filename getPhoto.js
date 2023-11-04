@@ -1,9 +1,16 @@
+const fruitSelect = document.getElementById('fruitSelect')
+
+
 //pexel api
 
 async function getPhoto(e) {
     e.preventDefault()
+    console.log(e.target.value)
     document.getElementById('photoSpot').innerHTML = ''
-    const query = e.target.value;
+
+    // const query = e.target.value;
+    const query = fruitSelect.value;
+
 
     const photoReq = await axios.get(`https://api.pexels.com/v1/search?query=${query}&per_page=1`, {
         headers: {

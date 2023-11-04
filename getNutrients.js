@@ -1,6 +1,10 @@
-//FoodData Central API Guide
+const fruitSelect = document.getElementById('fruitSelect')
+
+//FoodData Central API 
 
 async function getNutrients(e) {
+
+    const query = fruitSelect.value;
 
     const nutrientHeader = document.getElementById('nutrients')
     const ul = document.getElementById('nutrientSpot')
@@ -8,7 +12,9 @@ async function getNutrients(e) {
     e.preventDefault()
     nutrientHeader.innerText = 'Nutrients'
     const api_key = '0n6poLJ5xOaWYFtZL2XQLTviEdlGn95Jec7E3eKh'
-    const fruitTextUrl = `https://api.nal.usda.gov/fdc/v1/foods/search?api_key=${api_key}&query=${e.target.value}`
+    // const fruitTextUrl = `https://api.nal.usda.gov/fdc/v1/foods/search?api_key=${api_key}&query=${e.target.value}`
+    const fruitTextUrl = `https://api.nal.usda.gov/fdc/v1/foods/search?api_key=${api_key}&query=${query}`
+
     const response = await axios.get(fruitTextUrl)
     const data = await response.data
     ul.innerHTML = ''

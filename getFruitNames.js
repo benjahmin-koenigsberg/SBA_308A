@@ -5,7 +5,7 @@
 
 //Fruityvice API
 
- async function getFruitNames() {
+async function getFruitNames() {
 
 
     //  let config = {
@@ -19,24 +19,28 @@
     //  };
 
 
-     //Fruit APIs
+    //Fruit APIs
 
-     // const FRUIT_URL = "https://tropicalfruitandveg.com/api/tfvjsonapi.php?search=berry";
-     const FRUIT_URL = "https://www.fruityvice.com/api/fruit/all"
-     //const FRUIT_URL2 = "https://tropicalfruitandveg.com/api/tfvxmlapi.php?search=all"
+    // const FRUIT_URL = "https://tropicalfruitandveg.com/api/tfvjsonapi.php?search=berry";
+    const FRUIT_URL = "https://www.fruityvice.com/api/fruit/all"
+    //const FRUIT_URL2 = "https://tropicalfruitandveg.com/api/tfvxmlapi.php?search=all"
 
-     const response = await axios.get(FRUIT_URL, { crossdomain: true })
-    //let response = await axios.request(config);
+     const response = await axios.get(FRUIT_URL, {
+         headers: {
+             'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8'
+         }})
+
+
 
     const fruitData = await response.data
     console.log(fruitData);
 
-        fruitData.sort().forEach((fruit) => {
-            const fruitEl = document.createElement("option");
-            fruitEl.setAttribute("value", fruit.name);
-            fruitEl.innerText = fruit.name
-            document.getElementById('fruitSelect').append(fruitEl);
+    fruitData.sort().forEach((fruit) => {
+        const fruitEl = document.createElement("option");
+        fruitEl.setAttribute("value", fruit.name);
+        fruitEl.innerText = fruit.name
+        document.getElementById('fruitSelect').append(fruitEl);
     });
 };
 
-export {getFruitNames}
+export { getFruitNames }

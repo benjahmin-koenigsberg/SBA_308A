@@ -9,31 +9,40 @@
 
 
     <title>Benjahmins 308A SBA</title>
-    <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    </head>
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous"
+        referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+
+</head>
 
 <body>
     <!-- <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js" ></script> -->
-    <header style="height: 20vh;">
+    <header style="height: 3vh;">
 
     </header>
-<h5 class="display-5">Fruit Photo & Nutrient App</h5>
-    <select id="fruitSelect" style="width: 300px;" class="form-select form-select-lg my-1 mx-auto"
+    <h5 class="display-4">Pant Food Info App</h5>
+    <h6>Enter the name of a plant food below to see its picture and nutrient profile</h6>
+    <p>Built using the Pexels and FoodData Central APIs</p>
+    <!-- <select id="fruitSelect" style="width: 300px;" class="form-select form-select-lg my-1 mx-auto"
         aria-label="form-select-lg">
         <option disabled selected value> -- Select A Fruit -- </option>
-    </select>
-    <div id="photoSpot"></div>
-    <div>
-        <h5 class="text-center mt-5" id="nutrients">Nutrients</h5>
-        <ul class="list-group" id="nutrientSpot">
+    </select> -->
+    <input id="fruitSelect" style="width: 300px;" class="form-input my-1 mx-auto" aria-label="form-lg" id="fruitSelect"
+        type="text" name="fruit" placeholder="Enter the name of a plant food" />
+    <button class="btn btn-primary" id="searchBtn">Search</button>
 
-        </ul>
+    <div class="content-container">
+        <div id="photoSpot"></div>
+        <div>
+            <h5 class="text-center mt-5" id="nutrients">Nutrients</h5>
+            <ul class="list-group" id="nutrientSpot">
+
+            </ul>
+        </div>
     </div>
-    <footer style="height: 20vh;">
 
-    </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <!-- <script src="https://cdn.jsdelivr.net/npm/pexels-api/index.min.js"></script> -->
     <script src="./index.js" type="module" defer></script>

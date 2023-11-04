@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Playpen+Sans&display=swap');
 
 body {
     color: black;
@@ -5,20 +6,58 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    font-family: 'Playpen Sans', cursive;
+    /* background-image: url("https: //images.rawpixel.com/image_300/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvcGYtczc0LW1vbmlrYS1ncmFia293c2thLWFwcGxlLWNydW1ibGUtMi0wNy5qcGc.jpg"); */
+    background-repeat: no-repeat;
+    background-image: url('./background.webp');
+    background-size: cover;
+    /* background-size: auto; */
+    background-position: top center;
+    position: relative;
+    /* height: 100%;
+    width: 100%; */
 }
+
+h5{
+    text-transform: uppercase;
+}
+
+h6  {
+    font-size: 1.25rem;
+    text-align: center;
+    padding: 0 1rem;
+    text-transform: uppercase;
+
+}
+p {
+    font-family: monospace;
+    background-color: aliceblue;
+}
+
 
 img {
-    width: 25rem;
-    width: 50vw;
-    /* height: 10rem; */
+    width: 40vw;
+    width: 30rem;
     margin: auto;
-    margin-top: 2rem;
+    margin-top: 1rem;
     box-shadow: -3px 4px 5px 0px;
+
 }
 
+#searchBtn {
+    margin-top: 1rem;
+}
+
+.content-container {
+    display: flex;
+    justify-content: space-evenly;
+    width: 85%;
+    margin: auto;
+    align-items: center;
+    flex-wrap: wrap;
+}
 
 
 .list-group {
-    margin-top: 2rem;
-    width: 50vw;
+    box-shadow: -3px 4px 5px 0px;
 }
