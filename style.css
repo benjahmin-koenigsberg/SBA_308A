@@ -1,0 +1,18 @@
+img {
+    width: 30rem;
+    margin: auto;
+    margin-top: 2rem;
+    box-shadow: -3px 4px 5px 0px;
+}
+
+body {
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.list-group {
+    margin-top: 2rem;
+}
