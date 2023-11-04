@@ -20,7 +20,13 @@ https://eat-plants.netlify.app/
 
 - This app origanally started to showcase over 40 different fruits with photos and nutrients, although now allow to search for any plant food
 
-- This app uses the pexel API and the Food Central API
+- This app uses the pexel API
+
+https://www.pexels.com/api/documentation/
+
+- and the Food Central API
+
+https://fdc.nal.usda.gov/api-guide.html
 
 - This app also uses AXIOS and BOotstrap CSS via CDN
 
