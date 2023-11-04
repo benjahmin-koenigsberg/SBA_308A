@@ -1,9 +1,3 @@
-img {
-    width: 30rem;
-    margin: auto;
-    margin-top: 2rem;
-    box-shadow: -3px 4px 5px 0px;
-}
 
 body {
     color: black;
@@ -13,6 +7,18 @@ body {
     align-items: center;
 }
 
+img {
+    width: 25rem;
+    width: 50vw;
+    /* height: 10rem; */
+    margin: auto;
+    margin-top: 2rem;
+    box-shadow: -3px 4px 5px 0px;
+}
+
+
+
 .list-group {
     margin-top: 2rem;
+    width: 50vw;
 }

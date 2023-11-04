@@ -85,12 +85,12 @@ e.preventDefault()
     console.log(nutrients)
 
     const colors = ['list-group-item-primary', 'list-group-item-secondary', 'list-group-item-success', 'list-group-item-danger', 'list-group-item-warning', 'list-group-item-info', 'list-group-item-light', 'list-group-item-dark']
-    //const randomClass = colors[Math.floor(Math.random() * colors.length)]
+
     nutrients.forEach( (fruit) =>  {
         console.log(fruit)
         console.log(fruit.nutrientName)
         const li = document.createElement('li')
-        li.classList.add('list-group-item', 'list-group-item-action', colors[Math.floor(Math.random() * colors.length)] )
+        li.classList.add('list-group-item', colors[Math.floor(Math.random() * colors.length)] )
         li.innerText = `${fruit.nutrientName} - ${fruit.nutrientNumber} ${fruit.unitName}`;
         ul.append(li)
 
