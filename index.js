@@ -9,6 +9,7 @@ import { getNutrients } from "./getNutrients.js"
 const nutrientHeader = document.getElementById('nutrients')
 const fruitSelect = document.getElementById('fruitSelect')
 
+
 //event handler
 fruitSelect.addEventListener('change', (e) => {
     getPhoto(e)
